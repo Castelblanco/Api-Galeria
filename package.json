@@ -1,7 +1,7 @@
 {
   "name": "api-imagenes",
   "version": "1.0.0",
-  "description": "Galeria de imagenes para todo publico",
+  "description": "Api que proporciona imagenes en datos Buffer",
   "main": "main.js",
   "scripts": {
     "start": "node build/main.js",
