@@ -15,7 +15,6 @@ async function getImg(req, res){
           img = imagen.docs.map(i =>{return { img: i.img, type: i.type }; });
 
       res.status(200).json({img});
-
     }catch(e){
       res.status(500).json({ message: e.message })
     }
