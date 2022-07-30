@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node build/server.js",
     "dev": "nodemon --exec npx babel-node src/server.js",
-    "build": "babel src -d build"
+    "build": "babel src -d build & npm start"
   },
   "keywords": [],
   "author": "Castelblanco",
