@@ -9,7 +9,7 @@ app.set("port", process.env.PORT || 3000);
 //Setting
 app.use(express.json())
    .use(express.urlencoded({extended: false}))
-   .use(cors());
+   .use(cors({ origin: "https://castel-galeria-publica.netlify.app" }));
 
 // Router
 app.use(router);
