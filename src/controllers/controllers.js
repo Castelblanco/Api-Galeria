@@ -25,7 +25,7 @@ async function postImg (req, res){
     try{
       const { path, mimetype } = req.file,
           { wordKey } = req.body,
-          img = fs.readFileSync(path);
+          img = fs.readFileSync(path).toString("base64");
         
         if (wordKey && wordKey.length > 0){
           if (mimetype.indexOf("image") != -1){
