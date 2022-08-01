@@ -10,4 +10,4 @@ const schema = new Schema({
       { versionKey: false });
 
 schema.plugin(mongoosePaginate);
-export default model("image", schema);
+export default model("images", schema);
